@@ -1,0 +1,27 @@
+{
+  "ticket": "Hola. Desde esta mañana no puedo acceder a mi cuenta: aparece un error 500 al iniciar sesión. Además, veo dos cargos de 29 euros por la misma suscripción. Necesito recuperar el acceso hoy para trabajar y solicito el reembolso del cobro duplicado. Mi correo es cliente@example.com. Por favor, pasad el caso a una persona de soporte si no podéis resolverlo.",
+  "labels": {
+    "problema_tecnico": "Problema técnico",
+    "problema_facturacion": "Problema de facturación",
+    "solicita_reembolso": "Solicita reembolso",
+    "problema_acceso": "Problema de acceso",
+    "urgencia_explicita": "Urgencia explícita",
+    "contiene_datos_personales": "Contiene datos personales",
+    "solicita_persona": "Solicita atención humana",
+    "requiere_consulta_cuenta": "Requiere consultar la cuenta",
+    "posible_abuso": "Lenguaje abusivo",
+    "pide_baja": "Solicita baja"
+  },
+  "questions": {
+    "problema_tecnico": { "type": "noul", "instructions": "¿El ticket describe un fallo técnico del servicio?", "criteria": { "true": "Describe errores, fallos o funciones que no funcionan.", "false": "No describe ningún fallo técnico." } },
+    "problema_facturacion": { "type": "noul", "instructions": "¿El ticket plantea un problema con pagos, cargos o facturación?", "criteria": { "true": "Menciona un problema con un cargo, pago o factura.", "false": "No plantea problemas de pagos ni facturación." } },
+    "solicita_reembolso": { "type": "noul", "instructions": "¿El cliente solicita explícitamente un reembolso?", "criteria": { "true": "Pide devolver dinero o reembolsar un cargo.", "false": "No solicita devolver dinero." } },
+    "problema_acceso": { "type": "noul", "instructions": "¿El cliente no puede acceder a su cuenta?", "criteria": { "true": "Indica que no puede iniciar sesión o acceder a su cuenta.", "false": "No indica impedimentos de acceso a su cuenta." } },
+    "urgencia_explicita": { "type": "noul", "instructions": "¿El cliente expresa una necesidad urgente o un plazo inmediato?", "criteria": { "true": "Expresa urgencia o pide resolver hoy o de inmediato.", "false": "No expresa urgencia ni un plazo inmediato." } },
+    "contiene_datos_personales": { "type": "noul", "instructions": "¿El ticket incluye datos personales identificables?", "criteria": { "true": "Incluye correo electrónico, teléfono, dirección u otro identificador personal.", "false": "No incluye identificadores personales." } },
+    "solicita_persona": { "type": "noul", "instructions": "¿El cliente pide que intervenga una persona de soporte, incluso de forma condicional?", "criteria": { "true": "Solicita atención humana directamente o si no se resuelve el caso.", "false": "No solicita atención humana." } },
+    "requiere_consulta_cuenta": { "type": "noul", "instructions": "¿Para resolver lo descrito hace falta comprobar registros de la cuenta o sus pagos?", "criteria": { "true": "El problema requiere consultar accesos, suscripciones, cargos o registros de cuenta.", "false": "Basta información general sin consultar registros de cuenta." } },
+    "posible_abuso": { "type": "noul", "instructions": "¿El ticket contiene insultos, amenazas o lenguaje abusivo dirigido a otras personas?", "criteria": { "true": "Contiene insultos, amenazas o expresiones abusivas.", "false": "No contiene lenguaje abusivo; una queja o urgencia por sí sola no es abuso." } },
+    "pide_baja": { "type": "noul", "instructions": "¿El cliente solicita cancelar su cuenta o suscripción?", "criteria": { "true": "Solicita cancelar, dar de baja o cerrar la cuenta o suscripción.", "false": "No solicita baja; pedir reembolso no implica cancelar." } }
+  }
+}

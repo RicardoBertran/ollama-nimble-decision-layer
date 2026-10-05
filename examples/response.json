@@ -1,0 +1,49 @@
+{
+  "model": "nimble:latest",
+  "answers": {
+    "problema_tecnico": {
+      "type": "noul",
+      "noul": 0.9902639040419059
+    },
+    "problema_facturacion": {
+      "type": "noul",
+      "noul": 0.9989456730279009
+    },
+    "solicita_reembolso": {
+      "type": "noul",
+      "noul": 0.9988777941708301
+    },
+    "problema_acceso": {
+      "type": "noul",
+      "noul": 0.9990487404853668
+    },
+    "urgencia_explicita": {
+      "type": "noul",
+      "noul": 0.9923080238328372
+    },
+    "contiene_datos_personales": {
+      "type": "noul",
+      "noul": 0.9967343192377617
+    },
+    "solicita_persona": {
+      "type": "noul",
+      "noul": 0.9933259898472406
+    },
+    "requiere_consulta_cuenta": {
+      "type": "noul",
+      "noul": 0.9921963498803088
+    },
+    "posible_abuso": {
+      "type": "noul",
+      "noul": 0.008796655568506612
+    },
+    "pide_baja": {
+      "type": "noul",
+      "noul": 0.031528950287138466
+    }
+  },
+  "usage": {
+    "input_tokens": 9010,
+    "output_tokens": 11
+  }
+}

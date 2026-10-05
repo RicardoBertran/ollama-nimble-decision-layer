@@ -1,0 +1,8 @@
+*.log
+*.gguf
+*.zip
+.DS_Store
+Thumbs.db
+.vscode/
+work/
+node_modules/

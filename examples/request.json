@@ -1,0 +1,15 @@
+{
+  "model": "nimble:latest",
+  "state": "Me han cobrado dos veces. Solicito el reembolso del cargo duplicado.",
+  "questions": {
+    "solicita_reembolso": {
+      "type": "noul",
+      "instructions": "¿El cliente solicita explícitamente un reembolso?",
+      "criteria": {
+        "true": "Pide devolver dinero o reembolsar un cargo.",
+        "false": "No solicita devolver dinero."
+      }
+    }
+  },
+  "keep_alive": "30m"
+}

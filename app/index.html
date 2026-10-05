@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Nimble · Capa de decisiones</title><link rel="stylesheet" href="styles.css"></head>
+<body><main>
+<header><span class="badge">OLLAMA · NIMBLE 9B · LOCAL</span><h1>Un ticket. Diez decisiones.</h1><p>Clasifica un mensaje en español con preguntas concretas y resultados medibles.</p></header>
+<section aria-labelledby="input-title"><h2 id="input-title">1. Revisa el ticket</h2><label for="ticket">Mensaje del cliente</label><textarea id="ticket" rows="7"></textarea><div class="settings"><div><label for="model">Modelo</label><input id="model" value="nimble:latest" required></div><div><label for="threshold">Umbral para «Sí»</label><input id="threshold" type="number" min="0" max="1" step="0.05" value="0.5"></div></div><p class="hint">Conexión directa: http://localhost:11434/v1/systemone · permanencia: 30 minutos.</p><div class="actions"><button id="run">Analizar ticket</button><button id="reset" class="secondary">Restaurar ejemplo</button><button id="download" class="secondary" disabled>Descargar JSON</button></div><p id="status" role="status" aria-live="polite">Preparado. La primera ejecución puede tardar más al cargar el modelo.</p></section>
+<section aria-labelledby="result-title"><h2 id="result-title">2. Consulta las decisiones</h2><p>«Sí» significa que el valor supera o iguala el umbral. El resultado puede equivocarse y requiere validación con tus propios casos.</p><div id="results" class="grid"></div><details><summary>Respuesta completa de Ollama</summary><pre id="raw">Sin resultados todavía.</pre></details></section>
+<footer>Las diez preguntas se evalúan de forma independiente. Esta demo clasifica; las acciones de otros agentes se implementan por separado.</footer>
+</main><script src="app.js" defer></script></body></html>
